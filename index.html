@@ -15,6 +15,14 @@
         -->
 		<!--放置头部的小操作功能，比如登录之类-->
 		<div id="head">
+			<div id="head_div">
+				<div id="head_list">
+					<span>今日天气</span>
+					<span><a href="#">精神食堂</a></span>
+					<span><a href="#">登录</a></span>|
+					<span><a href="#">注册</a></span>
+				</div>
+			</div>
 		</div>
 		<!--导航栏-->
 		<div id="nav">
@@ -32,7 +40,6 @@
 					<ul class="nav_ul">
 						<li>项目1</li>
 						<li>项目2</li>
-						<li>项目3</li>
 					</ul>
 				</li>
 				<li class="na_li">
@@ -47,17 +54,41 @@
 				<li class="na_li">生活入口</li>
 			</ul>
 		</div>
-		<!--主题内容部分-->
+		<!--主题内容部分，这里放一些夏日里的成长日记-->
 		<div id="content">
-			<div id="c_left"></div>
-			<div id="c_middle"></div>
-			<div id="c_right">
-				<div id="c_r_word">风虽大<br/>&nbsp;&nbsp;都绕过我的灵魂</div>
+			<div id="content_list">
+				<div id="content_search">
+					<div id="logo_autor">
+						<!--<img src="yzc/images/yzc.png" alt="..." />-->
+						<div id="autor_name">捂面男</div>
+					</div>
+					<div id="search">
+						<input type="text" name="search" id="searchBox" value="" placeholder="站内搜搜"/>
+						<button>搜一下</button>
+					</div>
+				</div>
+				<div>
+					<div id="c_r_word">风虽大<br/>&nbsp;&nbsp;都绕过我的灵魂</div>
+				</div>
+			</div>
+			<div id="lunboPic">
+				<div class="WSCSlideWrapper" style="display: block;">
+					<div class="WSCSlide WSCSlideTransition" id="index_banner">
+						<img class='WSCSlide_img' src='yzc/images/164234lar7v70psdv3vprp.jpg' style='width:1rem;height: auto;' />
+						<img class='WSCSlide_img' src='yzc/images/164234lar7v70psdv3vprp.jpg' style='width:1rem;height: auto;' />
+						<img class='WSCSlide_img' src='yzc/images/164234lar7v70psdv3vprp.jpg' style='width:1rem;height: auto;' />
+					</div>
+					<div class="WSCSlideStatus"></div>
+				</div>
+			</div>
+			<div id="join">
+				
 			</div>
 		</div>
 		<!--底部功能(包含个人信息等功能提示)-->
 		<div id="foot"></div>
 	</body>
 	<script src="yzc/src/public/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="yzc/src/public/lunbo.js" type="text/javascript" charset="utf-8"></script>
 	<script src="yzc/src/person/index.js" type="text/javascript" charset="utf-8"></script>
 </html>

@@ -9,4 +9,12 @@ body ,ul{
 li{
 	list-style: none;
 }
+a { 
+	text-decoration:none ;
+	out-line: none;
+	color: #ffffff;
+}
+input{
+	outline: none;
+}
 /*样式*/

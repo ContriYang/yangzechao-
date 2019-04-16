@@ -1,54 +1,197 @@
 body{
-	background: url(../images/164234lar7v70psdv3vprp.jpg);
+	/*background: url(../images/164234lar7v70psdv3vprp.jpg);*/
+	background: rgba(250,250,250,0.4);
 	color: #fff;
 	overflow-x: hidden;
-	/*font-size: 50px;*/
+	font-size: 0.3rem;
 }
 #head{
 	height: 0.8rem;
 	width: 100%;
-	
+	position: relative;
+}
+#head_div{
+	height: 0.5rem;
+	width: 100%;
+	background: rgba(51,51,51,0.9);
+}
+#head_list{
+	font-size: 0.25rem;
+	line-height: 0.5rem;
+	float: right;
+	position: absolute;
+	right: 0px;
+	margin-right:10%;
+}
+#head_list span{
+	display: inline-block;
+	margin-right: 0.15rem;
+	margin-left: 0.15rem;
 }
 #nav{
 	width: 100%;
-	height: 2rem;
-	border: 1px solid red;
+	height: 1.5rem;
 	font-size: 0.36rem;
 }
 #nav > ul{
 	height: 100%;
 	width: 70%;
 	margin: 0 auto;
-	border-radius:1rem;
+	border-radius:0.2rem;
 	line-height: 100%;
 	background-color: rgba(119,158,217,0.3);
 }
-#nav > ul > li{
+#nav .na_li{
 	height: 100%;
 	width: 20%;
 	float: left;
 	vertical-align: middle;
 	text-align: center;
-	line-height: 2rem;
-	cursor: pointer;
-	
-	
+	line-height: 1.5rem;
+	cursor: pointer;	
 }
-
+#nav .na_li:hover{
+	
+	background: rgba(79,128,187,0.1);
+}
 .nav_ul{
 	display: none;
+	background: #ccc;
+	position: relative;
+	height: 0;
+	width: 80%;
+	margin: 0 auto;
+	background-color: rgba(119,158,217,0.3);
+	border-radius:0 0 0.1rem 0.1rem;
 }
 
+.nav_ul>li{
+	height: 0.8rem;
+	line-height: 0.8rem;
+	border-bottom: 1px solid rgba(79,128,187,0.3);
+}
+.nav_ul>li:hover{
+	background: ;
+	color: #acd87f;
+	background: rgba(232, 186, 214 ,0.2);
+}
+.nav_ul>li:last-child{
+	border-bottom: none;
+	
+}
+#content{
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 1rem;
+	color: #011D37;
+}
+#content_list{
+	width: 100%;
+	margin: 0 auto;
+	margin-bottom: 0.5rem;
+	background: rgba(230,244,252,0.3);
+	min-height: 2rem;
+	border: 1px solid rgba(50,50,50,0.3);
+	/*vertical-align: middle;*/
+		
+}
+#content_search{
+	height: 1rem;
+	width: 100%;
+	line-height: 1rem;
+	margin-top:0.5rem ;
+}
+#logo_autor{
+	vertical-align: middle;
+	height: 1rem;
+	float: left;
+}
+#content_search #search{
+	/*width: 50%;*/
+	float: right;
+	margin-right: 1rem;
+}
+#content_search input{
+	clear: both;
+	height: 0.6rem;
+	width: 4rem;
+	margin: 0.2rem 0.3rem 0.2rem 0.3rem;
+	border: 1px solid #022F5A;
+	border-radius:0.1rem ;
+	font-size: 0.3rem;
+	padding: 0 0.1rem;
+	
+}
+#search span{
+	clear: both;
+}
+/*#logo_autor img{
+	height: 1rem;
+	width: auto;
+}*/
+#logo_autor div{
+	height: 1rem;
+	line-height: 1rem;
+	background:url(../images/yzc.png) no-repeat left center;
+	background-size:1rem auto;
+	font-size: 0.6rem;
+	font-weight: bold;
+	font-family:"KaiTi";
+	padding-left: 1.1rem;
+	margin-left: 0.2rem;
+}
 
 #c_r_word{
 	font-family:"KaiTi" ;
 	position: fixed;
-	right: 2rem;
-	top: 3rem;
+	font-size: 0.5rem;
+	right: 1.3rem;
+	top: 3.2rem;
 	width: 3rem;
 	height: 10rem;
-	background-image: -webkit-gradient(linear, left 0, right 0, from(rgb(221, 193, 218)), to(rgb(102, 73, 93)));
+	background-image: -webkit-gradient(linear, left 0, right 0, from(rgba(221, 193, 218,0.5)), to(rgba(102, 73, 93,0.5)));
     -webkit-background-clip: text; /*必需加前缀 -webkit- 才支持这个text值 */
     -webkit-text-fill-color: transparent; /*text-fill-color会覆盖color所定义的字体颜色： */
    	writing-mode: vertical-lr;
+}
+#lunboPic{
+	width: 65%;
+	min-height: 6.5rem;
+	float: left;
+	background: rgba(230,244,252,0.3);
+	border: 1px solid rgba(50,50,50,0.3);
+	box-shadow: 0 0 0.05rem 0.05rem rgba(100,100,100,0.3);
+}
+.WSCSlideWrapper {
+	margin : 0.6rem 4%;
+	width: 90%;
+	height: 5rem;
+	position: relative;
+	overflow: hidden;
+}
+
+.WSCSlide {
+	width: 400%;
+	height: 100%;
+	font-size: 0;
+	position: absolute;
+	-webkit-transform: translate3d(0, 0, 0);
+}
+
+.WSCSlideTransition {
+	-webkit-transition: all 0.5s 0s ease-in-out;
+}
+
+.WSCSlide_img {
+	width: 100%;
+	height: 180px;
+}
+#join{
+	width: 33%;
+	height: 6.5rem;
+	float: left;
+	margin-left:1.6% ;
+	border: 1px solid rgba(50,50,50,0.3);
+	box-shadow: 0 0 0.05rem 0.05rem rgba(100,100,100,0.3);
+	background: rgba(230,244,252,0.3);
 }
